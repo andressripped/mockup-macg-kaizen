@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap');
+
+/* Color Variables */
+:root {
+    --navy-deep: #10182D;
+    --lime-kaizen: #8CC63F;
+    --white-pure: #FFFFFF;
+    --gray-corporate: #F4F6F9;
+    --text-dark: #1C2434;
+    --text-muted: #64748B;
+}
+
+/* Base resets */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white-pure);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* KPMG-inspired button styles */
+.btn-pill {
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-pill-white {
+    background-color: var(--white-pure);
+    color: #00338D;
+}
+
+.btn-pill-white:hover {
+    background-color: #F4F6F9;
+}
+
+.btn-pill-blue {
+    background-color: #00338D;
+    color: var(--white-pure);
+}
+
+.btn-pill-blue:hover {
+    background-color: #002266;
+}
+
+.btn-pill-outline-blue {
+    background-color: transparent;
+    color: #00338D;
+    border: 1px solid #00338D;
+}
+
+.btn-pill-outline-blue:hover {
+    background-color: #EEF2F6;
+}
+
+/* Cards */
+.card-kpmg {
+    border: 1px solid #E2E8F0;
+    background-color: var(--white-pure);
+    border-radius: 0;
+}
+
+.card-top-accent {
+    border-top: 4px solid #00338D;
+}
+
+/* Layout utilities */
+.px-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media (min-width: 1024px) {
+    .px-section {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
