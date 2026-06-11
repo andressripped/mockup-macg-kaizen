@@ -41,7 +41,6 @@ tailwind.config = {
                 "on-secondary-fixed-variant": "#304f00",
                 "on-primary-container": "#7c839d",
                 "secondary": "#416900",
-                "on-tertiary-fixed-variant": "#3f4758",
                 "on-secondary": "#ffffff",
                 "on-background": "#191c1e",
                 "on-tertiary-container": "#7c8497",
@@ -133,12 +132,12 @@ tailwind.config = {
 // Interactive mobile menu logic
 document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.getElementById("mobile-menu-btn");
-    const navMenu = document.getElementById("mobile-nav-menu");
+    const mobileDropdown = document.getElementById("mobile-dropdown");
 
-    if (menuBtn && navMenu) {
+    if (menuBtn && mobileDropdown) {
         menuBtn.addEventListener("click", () => {
-            navMenu.classList.toggle("hidden");
-            navMenu.classList.toggle("flex");
+            mobileDropdown.classList.toggle("hidden");
+            mobileDropdown.classList.toggle("flex");
         });
     }
 });
