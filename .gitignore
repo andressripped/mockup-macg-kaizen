@@ -10,3 +10,6 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+# Project reference files
+DESING.md
+EMPRESA.md
